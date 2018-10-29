@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>teht4</title>
+</head>
+<body>
+<script>
+
+luvut = [];
+let lukuja;
+
+lukuja = prompt("Anna lukuja niin tulostan ne suurimmasta pienimpään");
+while (lukuja > 0){
+  luvut.push(lukuja);
+  lukuja = prompt("anna lisää lukuja");
+}
+console.log(luvut);
+
+function sortNums(arr) {
+  let sorted = arr.sort((a, b) => b - a);
+  console.log(sorted.join(", "));
+}
+
+sortNums(luvut);
+document.write(luvut);
+
+
+
+
+
+</script>
+</body>
+</html>

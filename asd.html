@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="foo">
+
+</div>
+
+<script type="text/javascript">
+  var set0 = [];
+  osallistujat = prompt("Montako osallistujaa?");
+
+  for(var i = 0; i < osallistujat; i++){
+    set0.push(prompt("anna nimi"));
+  }
+
+  function makeUL(set0) {
+    // Create the list element:
+    var list = document.createElement('ul');
+
+    for(var i = 0; i < set0.length; i++) {
+      // Create the list item:
+      var item = document.createElement('li');
+
+      // Set its contents:
+      item.appendChild(document.createTextNode(set0[i]));
+
+      // Add it to the list:
+      list.appendChild(item);
+    }
+
+    // Finally, return the constructed list:
+    return list;
+  }
+
+  // Add the contents of options[0] to #foo:
+  document.getElementById('foo').appendChild(makeUL(set0[0]));
+</script>
+</body>
+</html>

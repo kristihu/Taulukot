@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>teht3</title>
+</head>
+<body>
+<div id="nimet"></div>
+<script>
+    koirat = [];
+
+    let n = document.createElement("ul");
+    let divi = document.getElementById("nimet");
+    divi.append(n);
+    for (let i=0; i <= 5; i++){
+      let nimi = prompt("anna koiran nimi?");
+      koirat.push(nimi);
+
+    }
+
+    koirat.sort();
+    koirat.reverse();
+
+    for (let i=0; i<6; i++){
+      let lista = document.createElement("li");
+      lista.innerHTML = koirat[i];
+      n.append(lista);
+    }
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>teht2</title>
+</head>
+<body>
+<div id="nimet"><ol></ol></div>
+<script type="text/javascript">
+    let osallistujat;
+
+    lista = [];
+
+    osallistujat = prompt("Montako osallistujaa?");
+
+    for(var i = 0; i < osallistujat; i++){
+      lista.push(prompt("anna nimi"));
+      document.getElementById("nimet").children[0].innerHTML += "<li>"+lista[lista.length-1]+"</li>";
+    }
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
